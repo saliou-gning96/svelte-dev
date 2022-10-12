@@ -1,6 +1,6 @@
 <script>
-    import { supabase } from '$lib/supabaseClient'
-    import { user } from '$lib/sessionStore'
+    import { supabase } from '$lib/services/supabaseClient'
+    import { user } from '$lib/services/sessionStore'
   
     let loading = true
     let username = null

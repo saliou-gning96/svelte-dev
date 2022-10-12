@@ -1,7 +1,7 @@
 <script>
-    import { user } from '$lib/sessionStore'
-    import { supabase } from '$lib/supabaseClient'
-    import Profile from '$lib/Profile.svelte'
+    import { user } from '$lib/services/sessionStore'
+    import { supabase } from '$lib/services/supabaseClient'
+    import Profile from '$lib/components/Profile.svelte'
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
 
