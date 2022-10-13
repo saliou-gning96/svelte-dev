@@ -3,8 +3,10 @@
     import { goto } from '$app/navigation';
   
     let loading = false
-    let email
-    let password
+    let email = ''
+    let password = ''
+
+    $: isFormValid = email !== '' && password !== '';
   
     const handleLogin = async () => {
         try {
@@ -42,7 +44,7 @@
         </div>
         <div>
         <input type="submit" class='button block' value={loading ? "Loading" :
-        "LOGIN"} disabled={loading} />
+        "LOGIN"} disabled={loading || !isFormValid} />
         </div>
     </div>
 </form>

@@ -4,7 +4,6 @@
     import Profile from '$lib/components/Profile.svelte'
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
-    import Header from '$lib/components/Header.svelte';
 
     user.set(supabase.auth.user());
 
@@ -19,7 +18,6 @@
     })
 </script>
 
-<div class="container">
-    <Header />
-    Home page
+<div>
+    <Profile />
 </div>

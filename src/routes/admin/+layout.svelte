@@ -1,7 +1,6 @@
 <script>
     import { user } from '$lib/services/sessionStore'
     import { supabase } from '$lib/services/supabaseClient'
-    import Profile from '$lib/components/Profile.svelte'
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
     import Header from '$lib/components/Header.svelte';
@@ -21,5 +20,6 @@
 
 <div class="container">
     <Header />
-    Home page
+      
+    <slot></slot>
 </div>
